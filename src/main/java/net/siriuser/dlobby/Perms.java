@@ -8,6 +8,8 @@ package net.siriuser.dlobby;
 import org.bukkit.permissions.Permissible;
 
 public enum Perms {
+    BYPASS_BREAK("bypass.break"),
+    BYPASS_PLACE("bypass.place"),
     ;
 
     final String HEADER = "dlobby.";

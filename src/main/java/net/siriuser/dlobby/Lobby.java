@@ -5,6 +5,7 @@
  */
 package net.siriuser.dlobby;
 
+import net.siriuser.dlobby.listeners.PlayerEditListener;
 import net.syamn.utils.LogUtil;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
@@ -18,6 +19,7 @@ public class Lobby extends JavaPlugin {
         LogUtil.init(this);
 
         PluginManager pm = getServer().getPluginManager();
+        pm.registerEvents(new PlayerEditListener(this), this);
 
         PluginDescriptionFile pdfFile = this.getDescription();
         LogUtil.info(pdfFile.getName() + " version " + pdfFile.getVersion() + " is enabled!");
