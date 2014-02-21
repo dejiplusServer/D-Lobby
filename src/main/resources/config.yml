@@ -1,0 +1,47 @@
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#   ExpManager ConfigFile!
+#   Author SiriuseR(dejiplus)
+#   License GPLv3
+#<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+#>>>>>>>>>>>>>>>>>>>>>>#
+#   Motd Config        #
+#<<<<<<<<<<<<<<<<<<<<<<#
+motd:
+   - '&cMotdMessage!'
+   - '&bWelcom dejiplus!'
+
+#>>>>>>>>>>>>>>>>>>>>>>#
+#   Announce Config    #
+#<<<<<<<<<<<<<<<<<<<<<<#
+announce:
+   interval: 1
+   message:
+      - '&6Follow me! &btwitter.com/mc_dejiplus'
+
+#>>>>>>>>>>>>>>>>>>>>>>#
+#   BarAnnounce Config #
+#<<<<<<<<<<<<<<<<<<<<<<#
+announcebar:
+   interval: 1
+   message:
+      - '&cFollow me! twitter.com/mc_dejiplus'
+      - '&7Welcome %PLAYER%!'
+      - '&c3'
+      - '&74'
+      - '&c5'
+      - '&76'
+      - '&c7'
+      - '&78'
+      - '&c9'
+      - '&710'
+
+#>>>>>>>>>>>>>>>>>>>>>>#
+#   Debug Config       #
+#<<<<<<<<<<<<<<<<<<<<<<#
+Debug: false
+
+#>>>>>>>>>>>>>>>>>>>>>>#
+#   DO NOT TOUCH       #
+#<<<<<<<<<<<<<<<<<<<<<<#
+ConfigVersion: 2
