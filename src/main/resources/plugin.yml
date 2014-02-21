@@ -1,0 +1,6 @@
+name: D-Lobby
+version: version-number-unknown
+description: dejiplusServer LobbyPlugin.
+authors: [SiriuseR]
+website: http://www.siriuser.net/
+main: net.siriuser.dlobby.Lobby
