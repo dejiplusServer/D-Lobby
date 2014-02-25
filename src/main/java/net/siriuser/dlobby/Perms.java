@@ -10,6 +10,8 @@ import org.bukkit.permissions.Permissible;
 public enum Perms {
     BYPASS_BREAK("bypass.break"),
     BYPASS_PLACE("bypass.place"),
+
+    MENU_SERVER("menu.server"),
     ;
 
     final String HEADER = "dlobby.";
