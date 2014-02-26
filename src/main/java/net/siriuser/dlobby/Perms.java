@@ -10,6 +10,9 @@ import org.bukkit.permissions.Permissible;
 public enum Perms {
     BYPASS_BREAK("bypass.break"),
     BYPASS_PLACE("bypass.place"),
+    BYPASS_PICKUP("bypass.pickup"),
+    BYPASS_DROP("bypass.drop"),
+    BYPASS_INVENTORY("bypass.inventory"),
 
     MENU_SERVER("menu.server"),
     ;

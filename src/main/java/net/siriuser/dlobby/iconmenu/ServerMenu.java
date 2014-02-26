@@ -47,12 +47,22 @@ public class ServerMenu {
                     }
                 }
 
+                if (event.getName().equals(Util.coloring("&cdejiplus Private Server"))) {
+                    try {
+                        BungeeCordUtil.ServerTeleport(player, "private", plugin);
+                    } catch (IOException e) {
+                        player.sendMessage("サーバーに接続出来ませんでした。");
+                        e.printStackTrace();
+                    }
+                }
+
                 if (event.getName().equals(Util.coloring("&6閉じる / Close"))) {
                     event.setWillClose(true);
                 }
             }
         }, plugin)
-                .setOption(0, new ItemStack(Material.DIAMOND , 1), Util.coloring("&bSkyBlock"), "SkyBlockサーバーに接続します。", "Connect SkyBlockServer.")
+                .setOption(0, new ItemStack(Material.DIAMOND), Util.coloring("&bSkyBlock"), "SkyBlockサーバーに接続します。", "Connect SkyBlockServer.")
+                .setOption(1, new ItemStack(Material.DIAMOND_SWORD), Util.coloring("&cdejiplus Private Server"), "ホワイトリスト制")
                 .setOption(26, new ItemStack(Material.WOOD_DOOR, 1), Util.coloring("&6閉じる / Close"), "メニューを閉じます。", "Close this menu.")
         ;
     }

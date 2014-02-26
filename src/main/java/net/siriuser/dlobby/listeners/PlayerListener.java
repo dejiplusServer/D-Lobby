@@ -33,10 +33,4 @@ public class PlayerListener implements Listener {
             }
         }
     }
-
-    @EventHandler
-    public void onJoin(final PlayerJoinEvent event) {
-        final Player player = event.getPlayer();
-        player.getInventory().setItem(8, Lobby.getServerMenu().getItem());
-    }
 }
